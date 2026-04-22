@@ -1,0 +1,24 @@
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 10rem;
+    margin-top: 20px;
+    border: 0.1rem solid var(--card-border);
+    border-radius: 10% 10% 10% 10%;
+    box-shadow: 0.5rem 0.5rem 2rem rgb(109, 110, 110);
+    background-color: var(--background-color);
+}
+.card img{
+    border-radius: 10% 10% 0% 0%;
+}
+
+.card p{
+    padding: 0rem 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    color:  rgb(143, 144, 112);
+    text-align: center;
+
+}
