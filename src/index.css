@@ -1,6 +1,11 @@
 :root {
-    --primary-color: rgb(143, 144, 112);
-    --background-color: rgb(255, 248, 238);
-    --card-border: rgb(143, 144, 112);
-    --text-color: #333;
-  }
+  --primary-color: rgb(143, 144, 112);
+  --secondary--color: rgba(89, 98, 76, 0.178);
+  --background-color: rgb(255, 248, 238);
+  --card-border: rgb(143, 144, 112);
+  --text-color: #333;
+  --box-shadow: rgb(165, 165, 165);
+  --white: rgb(255, 255, 255);
+  --drop-down-menu-color: rgb(52, 62, 50);
+  --drop-down-menu-hover: rgba(72, 80, 61, 0.178);
+}
