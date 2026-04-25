@@ -1,9 +1,9 @@
-import Card from '../components/Card/Card.jsx';
-import { useGetRecipesQuery } from '../services/recipesApi.js';
-import './RecipesPage.css';
-
+import Card from '../Card/Card.jsx';
+import { useGetRecipesQuery } from '../../services/recipesApi.js';
+import './RecipesList.css';
 import React from 'react';
-export default function RecipePage() {
+
+export default function RecipesList() {
   const { data, error, isLoading } = useGetRecipesQuery();
 
   if (isLoading) return <p>Loading...</p>;

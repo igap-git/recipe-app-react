@@ -1,11 +1,17 @@
 .side-nav-bar {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(234, 255, 239, 0.257);
+  gap: 0.4rem;
+  width: 19rem;
 }
 .side-nav-bar-wrapper {
   display: flex;
   flex-direction: column;
-  height: 98vh;
+  height: 83vh;
   justify-content: space-between;
+  background-color: rgba(161, 187, 167, 0.257);
+  box-shadow: 0.5rem 0.5rem 1rem var(--box-shadow);
+  padding: 0.8rem 0.8rem;
+  border-radius: 1.2rem;
 }

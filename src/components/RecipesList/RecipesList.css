@@ -1,0 +1,29 @@
+.recipes-block-display {
+  display: grid;
+  grid-template-columns: repeat(5, 12.5rem);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  max-height: 83vh;
+  overflow-y: auto;
+  padding: 0 1.5rem 0rem 1rem;
+}
+
+.recipes-block-display::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.recipes-block-display::-webkit-scrollbar-track {
+  background-color: var(--white);
+  border: 0.1rem solid var(--light-beige);
+  border-radius: 1.2rem;
+}
+
+.recipes-block-display::-webkit-scrollbar-thumb {
+  background: var(--light-beige);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.recipes-block-display::-webkit-scrollbar-thumb:hover {
+  background: var(--beige);
+}

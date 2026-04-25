@@ -1,8 +1,12 @@
-.btn-side-menu {
-  align-items: center;
-  width: 14rem;
+button {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: medium;
+}
+.btn-side-menu {
+  align-items: center;
+  width: 19rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 1.2rem;
   border: 0.01rem solid var(--white);
   background-color: var(--drop-down-menu-color);
   color: var(--white);
@@ -17,22 +21,41 @@
   text-shadow: 0.05rem 0.05rem 0.2rem var(--box-shadow);
   border: 0.1rem solid color(var(--white));
 }
-.btn-side-menu-support{
-    align-items: center;
-    width: 14rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-    border: 0.01rem solid var(--white);
-    color:dimgray;
-    background-color: var(--white);
-    height: 2.4rem;
-    padding: 0.2rem 1rem;
-    text-align: center;
-  }
-  .btn-side-menu-support:hover {
-    border-color: var(--drop-down-menu-hover);
-    color:var(--white);
-    text-shadow: 0.05rem 0.05rem 0.2rem var(--box-shadow);
-    border: 0.1rem solid color(var(--white));
-  }
-  
+.btn-side-menu-support {
+  align-items: center;
+  width: 19rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  border: 0.01rem solid rgba(227, 238, 229, 0.257);
+  color: dimgray;
+  background-color: rgba(227, 238, 229, 0.257);
+  height: 2.4rem;
+  padding: 0.2rem 1rem;
+  text-align: center;
+}
+.btn-side-menu-support:hover {
+  border-color: var(--drop-down-menu-hover);
+  color: var(--white);
+  text-shadow: 0.05rem 0.05rem 0.2rem var(--box-shadow);
+  border: 0.1rem solid color(var(--white));
+}
+.btn-upper-menu-sign-up {
+  background-color: var(--primary-color);
+  border: 0.15rem solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 2rem;
+}
+.btn-upper-menu-sign-up:hover {
+  background-color: var(--white);
+  border: 0.15rem solid var(--white);
+  color: dimgray;
+  text-shadow: 0.05rem 0.05rem 0.2rem var(--box-shadow);
+  box-shadow: 0.2rem 0.2rem 0.5rem var(--box-shadow);
+}
+.btn-upper-menu-sing-in {
+  background-color: var(--white);
+  border: 0;
+  color: dimgray;
+  font-weight: bolder;
+}
