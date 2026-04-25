@@ -1,0 +1,11 @@
+.side-nav-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+.side-nav-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 98vh;
+  justify-content: space-between;
+}

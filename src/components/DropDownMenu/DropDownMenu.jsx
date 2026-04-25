@@ -1,20 +1,23 @@
 import React, { useRef, useState } from 'react';
 import './DropDownMenu.css';
-import icon from '../../assets/icons/keyboard_arrow_down.svg';
+import arrowDown from '../../assets/icons/keyboard_arrow_down.svg';
+import arrowUp from '../../assets/icons/keyboard_arrow_up.svg';
 
-export default function DropDownMenu({ children, items = [] }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef(null);
-
-  const toggleMenu = () => {
-    setIsOpen((prev) => !prev);
-  };
-
+export default function DropDownMenu({
+  children,
+  items = [],
+  isOpen,
+  onToggle,
+}) {
   return (
-    <div ref={menuRef} className="drop-down-menu">
-      <div className="drop-down-menu-button-content" onClick={toggleMenu}>
+    <div className="drop-down-menu">
+      <div className="drop-down-menu-button-content" onClick={onToggle}>
         <label>{children}</label>
-        <img src={icon} className="icon" alt="menu icon" />
+        <img
+          src={isOpen ? arrowUp : arrowDown}
+          className="icon"
+          alt="menu icon"
+        />
       </div>
 
       <ul className={`menu ${isOpen ? 'open' : ''}`}>
