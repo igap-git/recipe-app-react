@@ -9,10 +9,20 @@ export const selectUniqueValues = (recipes = [], key) => {
     return [value];
   });
 
-  const uniqueSorted = [...new Set(flat)]
-    .map((v) => v.trim())
-    .filter(Boolean)
-    .sort((a, b) => a.localeCompare(b));
+  const floorValues = [...new Set(flat)]
+  .map((v) => {
+    const num = Number(v);
+    if (!isNaN(num)) {
+      return Math.floor(num);
+    }
+    return String(v).trim();
+  })
+
+  const uniqueSorted = [...new Set(floorValues)]
+    .filter((v) => v !== null && v !== undefined)
+    .map((v) => {return String(v).trim();})
+    .filter((v) => v !== '' && v !== null)
+    .sort((a, b) => String(a).localeCompare(String(b), undefined, { numeric: true }));
 
   return uniqueSorted.map((v) => ({
     label: v,

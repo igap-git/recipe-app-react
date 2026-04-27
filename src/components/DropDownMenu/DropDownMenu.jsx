@@ -8,10 +8,16 @@ export default function DropDownMenu({
   items = [],
   isOpen,
   onToggle,
+  variant,
 }) {
   return (
-    <div className="drop-down-menu">
-      <div className="drop-down-menu-button-content" onClick={onToggle}>
+    <div
+      className={`drop-down-menu ${variant ? `drop-down-menu-${variant}` : ''}`}
+    >
+      <div
+        className={`drop-down-menu-button-content ${variant ? `drop-down-menu-button-content-${variant}` : ''} `}
+        onClick={onToggle}
+      >
         <label>{children}</label>
         <img
           src={isOpen ? arrowUp : arrowDown}
@@ -20,7 +26,9 @@ export default function DropDownMenu({
         />
       </div>
 
-      <ul className={`menu ${isOpen ? 'open' : ''}`}>
+      <ul
+        className={`menu ${isOpen ? 'open' : ''} ${variant ? `menu-${variant}` : ''}`}
+      >
         {items.map((item, index) => (
           <li key={index}>{item.label}</li>
         ))}

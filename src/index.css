@@ -1,7 +1,7 @@
 :root {
   --primary-color: rgb(143, 144, 112);
   --secondary--color: rgba(89, 98, 76, 0.178);
-  --background-color: rgb(255, 253, 249);
+  --background-color: rgb(255, 254, 245);
   --card-border: rgb(143, 144, 112);
   --text-color: #333;
   --box-shadow: rgb(165, 165, 165);
@@ -9,6 +9,8 @@
   --gray: rgb(105, 105, 105);
   --beige: rgb(117, 114, 100);
   --light-beige: rgb(203, 200, 188);
+  --light-green: rgb(191, 202, 190);
+  --side-menu-background-color:  rgba(161, 187, 167, 0.257);
   --drop-down-menu-color: rgb(52, 62, 50);
   --drop-down-menu-hover: rgba(72, 80, 61, 0.178);
   --upper-menu-button-color: rgb(133, 131, 122);
@@ -16,4 +18,9 @@
 }
 body {
   background-color: var(--background-color);
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+
 }

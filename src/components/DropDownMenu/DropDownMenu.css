@@ -1,10 +1,11 @@
 .drop-down-menu {
   color: var(--beige);
-  max-width: 19rem;
+  max-width: 14rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: large;
+  font-size: medium;
   background-color: var(--white);
   border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+  position: relative;
 }
 
 .drop-down-menu-button-content {
@@ -16,7 +17,7 @@
   border-radius: 1.2rem;
   color: var(--white);
   border-color: var(--drop-down-menu-color);
-  height: 2rem;
+  height: 1.5rem;
   padding: 0.2rem 1rem;
   text-align: left;
 }
@@ -43,11 +44,9 @@
   margin: 0;
   padding: 0;
   max-height: 0;
-  overflow: hidden;
   opacity: 0;
   transform: translateY(1rem);
   transition:
-    opacity 0.2s ease,
     transform 0.2s ease;
 }
 
@@ -55,12 +54,14 @@
   max-height: 100%;
   opacity: 1;
   transform: translateY(0);
+  border-radius: 1.2rem 1.2rem;
 }
 
 .drop-down-menu li {
+  font-size: small;
   list-style: none;
   padding: 0.5rem 1rem;
-  width: 90%;
+  max-width: 14rem;
 }
 .drop-down-menu li:hover {
   color: var(--white);
@@ -68,4 +69,55 @@
   border-color: var(--card-border);
   text-shadow: 0.05rem 0.05rem 0.2rem var(--box-shadow);
   border-radius: 1.2rem 1.2rem;
+}
+
+
+
+
+.drop-down-menu-filter-bar {
+  color: var(--beige);
+  max-width: 10rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  background-color: var(--light-beige);
+  border-radius: 1.2rem;
+}
+.drop-down-menu-button-content-filter-bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--light-beige);
+  border-color: 1rem solid var(--white);
+  height: 1.5rem;
+  padding: 0.2rem 1rem;
+  text-align: left;
+  border-radius: 0;
+
+}
+.menu-filter-bar {
+  position: absolute;
+  background-color: var(--light-beige);
+  background: var(--white);
+  min-width: 100%; 
+  min-height: 100%;
+}
+.menu-filter-bar ul.open{
+  max-height: 100%;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-filter-bar li {
+  width: auto;
+  border-radius: 1.2rem;
+  text-align: center;
+  background-color: var(--light-beige);
+  border-radius: 0;
+}
+
+.menu-filter-bar li:hover {
+  background-color:var(--light-green);
+  text-align: center;
+  width: auto;
+  border-radius: 0;
 }

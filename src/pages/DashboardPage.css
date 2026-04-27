@@ -1,9 +1,40 @@
-.side-nav-and-recipes-list {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  padding: 0 2rem;
+.dashboard-page-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    max-width: fit-content;
+    gap: 1rem;
 }
 
-.dashboard-page-content {
+.side-nav-with-search-field-and-recipes-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2rem;
+  max-width: fit-content;
+}
+
+.search-field-and-recipes-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-star;
+  gap: 2rem;
+  margin: 1rem;
+  position: relative;
+  overflow: visible;
+  width: max-content;
+}
+.search-field-and-filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--background-color);
+  position: relative;
+
+}
+.menu-filter-content {
+  position: relative;
+  z-index: 9999;
+  background: var(--white);
+  width: max-content;
 }

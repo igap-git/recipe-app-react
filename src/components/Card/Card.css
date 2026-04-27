@@ -7,15 +7,19 @@
   box-shadow: 0.5rem 0.5rem 1rem var(--box-shadow);
   background-color: var(--background-color);
   justify-content: space-between;
+  position: relative;
+  z-index: 0;
 }
 .card img {
   border-radius: 10% 10% 0% 0%;
+  position: relative;
+  z-index: 0;
 }
 
 .card p {
   padding: 0rem 1rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: small;
-  color: rgb(143, 144, 112);
+  color:var(--beige);
   text-align: center;
 }

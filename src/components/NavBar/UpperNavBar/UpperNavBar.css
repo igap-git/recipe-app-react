@@ -3,7 +3,7 @@
   flex-direction: row;
   gap: 0.6rem;
   padding: 1rem;
-  justify-content: right;
+  justify-content: center;
 }
 .icon {
   width: 1.5rem;
@@ -14,26 +14,29 @@
 .upper-menu-sign-in-content {
   background-color: var(--white);
   border: 0.15rem solid var(--primary-color);
-  padding: 0.3rem 1rem;
-  color: dimgray;
+  color: var(--gray);
   border-radius: 2rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 6rem;
+  padding: 0.15rem 0.2rem;
 }
 .upper-menu-sign-in-content:hover {
   background-color: var(--white);
   border: 0.15rem solid var(--white);
-  color: dimgray;
+  color: var(--gray);
   text-shadow: 0.05rem 0.05rem 0.2rem var(--box-shadow);
   box-shadow: 0.2rem 0.2rem 0.5rem var(--box-shadow);
 }
 .logo {
-  width: 25rem;
+  width: 15rem;
 }
 .upper-nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  align-items: center;
-  padding: 1.5rem 2.5rem;
+  width: 85rem;
 }
