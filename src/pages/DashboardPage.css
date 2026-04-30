@@ -2,8 +2,11 @@
   display: flex;
   flex-direction: column;
   margin: 0 1rem;
-  max-width: fit-content;
   gap: 1rem;
+
+  /* zmiana */
+  width: 100%;
+  max-width: 100%;
 }
 
 .side-nav-with-search-field-and-recipes-list {
@@ -11,29 +14,93 @@
   flex-direction: row;
   justify-content: flex-start;
   gap: 2rem;
-  max-width: fit-content;
+
+  /* zmiana */
+  width: 100%;
+  max-width: 100%;
 }
 
 .search-field-and-recipes-list {
   display: flex;
   flex-direction: column;
-  justify-content: flex-star;
+  justify-content: flex-start; /* poprawka literówki */
   gap: 2rem;
   margin: 1rem;
   position: relative;
   overflow: visible;
-  width: max-content;
+
+  /* zmiana */
+  width: 100%;
 }
+
 .search-field-and-filters {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
   background-color: var(--background-color);
   position: relative;
+
+  /* dodane */
+  gap: 1rem;
+  flex-wrap: wrap;
 }
+
 .menu-filter-content {
   position: relative;
   z-index: 9999;
   background: var(--white);
-  width: max-content;
+
+  /* zmiana */
+  width: auto;
+}
+
+/* dodane */
+.recipes-list-content {
+  width: 100%;
+}
+
+/* opcjonalnie – bezpieczne obrazy */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========================= */
+/* RESPONSYWNOŚĆ */
+/* ========================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .side-nav-with-search-field-and-recipes-list {
+    flex-direction: column;
+  }
+
+  .search-field-and-filters {
+    justify-content: flex-start;
+  }
+}
+
+/* TELEFON */
+@media (max-width: 600px) {
+  .dashboard-page-content {
+    margin: 0 0.5rem;
+  }
+
+  .side-nav-with-search-field-and-recipes-list {
+    gap: 1rem;
+  }
+
+  .search-field-and-recipes-list {
+    margin: 0.5rem 0;
+  }
+
+  .search-field-and-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .menu-filter-content {
+    width: 100%;
+  }
 }

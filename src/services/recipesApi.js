@@ -5,10 +5,14 @@ export const recipesApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: 'https://dummyjson.com/' }),
   endpoints: (build) => ({
     getRecipes: build.query({
-      query: () => 'recipes',
+      query: () => ({
+        url: 'recipes',
+      }),
       transformResponse: (response) => response.recipes,
+    }),
+    getRecipeById: build.query({
+      query: (id) => `recipes/${id}`,
     }),
   }),
 });
-
-export const { useGetRecipesQuery } = recipesApi;
+export const { useGetRecipesQuery, useGetRecipeByIdQuery } = recipesApi;

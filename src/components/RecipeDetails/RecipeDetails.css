@@ -1,0 +1,95 @@
+.recipe-details {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: var(--white);
+  box-shadow: 1rem 1rem 1rem var(--light-beige);
+  border-radius: 2rem;
+  border: 0.1rem solid var(--light-beige);
+  margin: 3rem;
+  width: 70rem;
+}
+
+.image-and-informations {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 3rem;
+}
+.recipe-image {
+  width: 35rem;
+  height: 35rem;
+}
+.recipe-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 1rem var(--light-beige);
+}
+
+.recipe-informations p {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.5rem;
+}
+.recipe-informations h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+}
+.general-informations {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+.recipe-informations {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.details-informations {
+  margin: 1.5rem 0;
+}
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--light-green);
+  color: var(--white);
+  max-width: fit-content;
+  margin: auto;
+  padding: 0.2rem 0.8rem 0.2rem 0.5rem;
+  border-radius: 1rem;
+}
+.ingredients-and-instructions{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0rem 4rem 4rem;
+}
+.ingredients h3,
+.instructions h3{
+    color: var(--beige);
+    font-size: 3rem;
+}
+.ingredients ul,
+.instructions ol {
+  padding-left: 1.5rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.ingredients li,
+.instructions li {
+  font-size: 1.4rem;
+  color: var(--beige);
+  line-height: 1;
+}

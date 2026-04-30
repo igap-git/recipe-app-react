@@ -1,9 +1,9 @@
 .recipes-block-display {
   display: grid;
   grid-template-columns: repeat(5, 12.5rem);
-  grid-template-rows: auto auto;
+  grid-template-rows: 15rem auto;
   gap: 1rem;
-  height: 45rem;
+  height: 40rem;
   overflow: hidden;
   overflow-y: auto;
   max-width: fit-content;
@@ -28,4 +28,22 @@
 
 .recipes-block-display::-webkit-scrollbar-thumb:hover {
   background: var(--beige);
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--beige);
+}
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--beige);
+  text-align: center;
+}
+.selected-filter {
+  padding-left: 3rem;
+  margin: 0 0 1rem 0;
 }
