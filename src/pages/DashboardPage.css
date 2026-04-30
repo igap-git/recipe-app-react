@@ -2,11 +2,8 @@
   display: flex;
   flex-direction: column;
   margin: 0 1rem;
-  gap: 1rem;
-
-  /* zmiana */
-  width: 100%;
   max-width: 100%;
+  gap: 1rem;
 }
 
 .side-nav-with-search-field-and-recipes-list {
@@ -14,23 +11,21 @@
   flex-direction: row;
   justify-content: flex-start;
   gap: 2rem;
-
-  /* zmiana */
-  width: 100%;
   max-width: 100%;
 }
+
+
 
 .search-field-and-recipes-list {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* poprawka literówki */
+  justify-content: flex-start; 
   gap: 2rem;
   margin: 1rem;
   position: relative;
   overflow: visible;
-
-  /* zmiana */
   width: 100%;
+  min-width: 0; 
 }
 
 .search-field-and-filters {
@@ -40,67 +35,47 @@
   justify-content: space-around;
   background-color: var(--background-color);
   position: relative;
-
-  /* dodane */
   gap: 1rem;
-  flex-wrap: wrap;
+}
+.recipes-list-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-filter-content {
   position: relative;
   z-index: 9999;
   background: var(--white);
-
-  /* zmiana */
-  width: auto;
+  max-width: 100%; 
 }
 
-/* dodane */
-.recipes-list-content {
-  width: 100%;
-}
-
-/* opcjonalnie – bezpieczne obrazy */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* ========================= */
-/* RESPONSYWNOŚĆ */
-/* ========================= */
-
-/* TABLET */
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .side-nav-with-search-field-and-recipes-list {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
   }
-
   .search-field-and-filters {
-    justify-content: flex-start;
+   flex-direction: column;
+   gap: 1rem;
   }
 }
-
-/* TELEFON */
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
   .dashboard-page-content {
-    margin: 0 0.5rem;
+    justify-content: center;
+    align-items: center;
   }
-
   .side-nav-with-search-field-and-recipes-list {
-    gap: 1rem;
+    justify-content: center;
+  }
+  .recipes-list-content{
+    display: flex;
+    justify-content: center;
+  }
+  .menu-filter-content{
+    justify-content: center;
   }
 
-  .search-field-and-recipes-list {
-    margin: 0.5rem 0;
-  }
-
-  .search-field-and-filters {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .menu-filter-content {
-    width: 100%;
-  }
 }

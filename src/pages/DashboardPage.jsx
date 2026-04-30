@@ -28,7 +28,6 @@ export default function DashboardPage() {
           </div>
         </div>
       </div>
-      <RecipeDetails id={3}></RecipeDetails>
     </div>
   );
 }
