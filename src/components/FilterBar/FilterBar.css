@@ -5,6 +5,7 @@
   flex-wrap: wrap;   
   max-width: 100%;
   align-items: center;
+  background: var( --background-color);
 }
 
 @media (max-width: 1400px) {
